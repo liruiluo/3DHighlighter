@@ -280,7 +280,7 @@ if __name__ == '__main__':
     for seed in range(num_seeds):
         args.seed = seed
         mlp = optimize(args)
-        all_weights.append(copy.deepcopy(mlp.state_dict()))  # Assuming mlp is your model
+        all_weights.append(copy.deepcopy(mlp.state_dict()))
 
     averaged_weights = average_weights(all_weights)
 
